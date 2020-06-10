@@ -106,9 +106,9 @@ function mortgageCalculatorCredit(P, I, N, credit) {
 
     monthlyRate = principal * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, periods)) / (Math.pow(1 + monthlyInterestRate, periods) - 1)
 
-    if (credit > 739) {
+    if (credit > 740) {
         return console.log(name, "your monthly payment is", monthlyRate * 0.95)
-    } else if (credit < 660) {
+    } else if (credit <=740 && credit>= 660) {
         return console.log(name, "your monthly payment is", monthlyRate * 1.05)
     } else {
         return console.log(name, "your monthly payment is", monthlyRate)
